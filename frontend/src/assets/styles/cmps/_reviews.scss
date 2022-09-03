@@ -1,0 +1,118 @@
+.reviews-container {
+    margin-bottom: 40px;
+    .stay-rate {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: cereal-medium;
+        .reviews-amount {
+            color: $clr2;
+        }
+        i {
+            margin-right: 8px;
+        }
+    }
+
+    .user-reviews {
+        .review-by {
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    h2 {
+        margin: 2.5rem 0;
+    }
+    .user-reviews,
+    .add-review-container {
+        flex-wrap: wrap;
+
+        button {
+            font-family: "cereal-bold";
+            position: absolute;
+            top: 260px;
+            right: 10px;
+        }
+
+        article {
+            width: 47%;
+            margin-bottom: 40px;
+        }
+    }
+    .add-review-container {
+        .details-container > * {
+            flex: 1;
+        }
+        h2 {
+            display: flex;
+            // justify-content: end;
+        }
+        position: relative;
+        h3 {
+            font-size: 1.5rem;
+        }
+        textarea {
+            grid-column: 2;
+            resize: none;
+        }
+        .stars-container {
+            flex-wrap: wrap;
+            article {
+                height: fit-content;
+                gap: 20px;
+                h4 {
+                    margin: 0;
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+@include for-mobile-layout {
+    // .reviews-container .user-reviews,
+    // .reviews-container .add-review-container {
+    //     flex-wrap: nowrap;
+    // }
+    .reviews-container {
+        .value-rate {
+            margin: 40px 0 0 0;
+        }
+        // flex-wrap: nowrap;
+        .user-reviews {
+            article {
+                width: fit-content;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                padding: 15px;
+                margin: 0;
+                // height: fit-content;
+            }
+        }
+
+        .add-review-container {
+            button {
+                top: 430px;
+                right: 5px;
+            }
+            .details-container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                textarea {
+                    max-width: 340px;
+                }
+
+                .stars-container {
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+
+                    .review-ctg {
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

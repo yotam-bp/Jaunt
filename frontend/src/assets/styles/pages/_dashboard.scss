@@ -1,0 +1,185 @@
+.dashboard-page {
+    .logo-container {
+        color: $clr1;
+    }
+    h2 {
+        padding: 20px 0;
+        margin: 0;
+    }
+    header {
+        color: $clr2;
+        padding-top: 20px;
+    }
+
+    .host-container {
+        align-items: flex-start;
+
+        .summary {
+            flex: 1;
+            width: 65%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            color: #484848;
+            border-radius: 12px;
+            margin-top: 20px;
+
+            .dashboard {
+                padding: 0;
+                img {
+                    width: 270px;
+                    height: 300px;
+                }
+            }
+
+            .title {
+                font-size: 22px;
+                // padding: 10px 0;
+            }
+
+            .details {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+                .txt {
+                    .head {
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 6px;
+                        color: #484848;
+                        letter-spacing: 0.07px;
+                    }
+
+                    .main {
+                        line-height: 20px;
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            & > *:not(:first-child):not(:last-child) {
+                padding: 15px 0;
+
+                & > * {
+                    padding: 6px 0;
+                }
+                .green {
+                    color: #31af91;
+                }
+            }
+            .earnings-container {
+                border-bottom: 1px solid #ddd;
+            }
+        }
+
+        .v-img {
+            width: 40px;
+        }
+        .all-reservations {
+            margin-inline-end: 20px;
+            flex: 2;
+
+            .res-card {
+                margin-top: 20px;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                align-items: center;
+
+                .order-status-container {
+                    flex: 2.5;
+                    justify-content: flex-end;
+                    & > * {
+                        margin: 0;
+                    }
+                    .reject-btn {
+                        justify-content: flex-end;
+                        color: #dc3545;
+                    }
+                }
+
+                .v-img {
+                    width: 20px;
+                }
+
+                .res-img {
+                    margin-inline-end: 20px;
+                    flex: 1;
+
+                    img {
+                        object-fit: cover;
+                        vertical-align: middle;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .txt {
+                    flex: 9;
+
+                    .name {
+                        line-height: 20px;
+                        color: #ff385c;
+                        font-weight: 700;
+                    }
+
+                    .expire {
+                        line-height: 20px;
+                        font-size: 14px;
+                    }
+
+                    .desc {
+                        line-height: 16px;
+                        font-size: 12px;
+                        color: #bbb;
+                    }
+                }
+
+                .status {
+                    flex: 2;
+                    color: #008489;
+                    cursor: pointer;
+                    font-size: 20px;
+                    font-weight: 600;
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include for-mobile-layout {
+    .dashboard-page {
+
+        .host-container {
+            flex-direction: column;
+
+            .all-reservations {
+                margin: 0 auto;
+
+                .res-card {
+                    flex-direction: column;
+                    position: relative;
+
+                    &,
+                    .txt > * {
+                        margin-bottom: 10px;
+                    }
+
+                    .res-img {
+                        margin: 0 auto;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                    }
+                }
+            }
+
+            .summary{
+                width: 100%;
+            }
+        }
+    }
+}

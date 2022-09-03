@@ -1,0 +1,95 @@
+header {
+    background-color: transparent;
+    color: #fff;
+    // justify-content: space-between;
+
+    
+    .logo-container{
+        font-family: cereal-medium;
+        i{
+            padding-right: 15px;
+            
+        }
+    }
+    
+    .loggedin-user {
+        background-color: $clr1;
+        padding: 2px 8px;
+        border-radius: 1em;
+        align-self: flex-end;
+        color: whitesmoke;
+        span{
+            background-color: $clr2;
+            padding: 4px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    }
+
+    .header-nav{
+        align-items: center;
+    }
+    .header-nav{
+        :first-child{
+            margin-right: 40px;
+        }
+    } 
+    
+    .login-btn{
+        background-color: #fff;
+        border-radius: 21px;
+        border: 1px solid #ddd;
+        padding: 5px 5px 5px 12px;
+        gap: 5px;
+        width: 77px;
+        height: 42px;
+        i:first-child{
+            color: $clr2;
+             margin-left: 4px;
+        }
+        i:last-child{
+            color: gray
+        }
+    }
+    .user-container{
+        position: relative;
+        
+    }
+}
+
+.header-container{
+    padding-top: 20px;
+}
+
+@include for-mobile-layout{
+    header{
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        background-color: $clr6;
+        //    background: linear-gradient(180deg, rgba(0,0,0,0.8687850140056023) 14%, rgba(71,71,71,0) 100%);
+        color: $clr1;
+        right: 0;
+        width: 100%;
+        padding:10px 18px ;
+        .header-nav{
+            display: none; 
+        }
+        // .app-desc{
+        //     text-align: center;
+        //     justify-content: center;
+        // }
+
+        button{
+            margin: 0;
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            // color: $clr6;
+        }
+        
+    }
+}
+       

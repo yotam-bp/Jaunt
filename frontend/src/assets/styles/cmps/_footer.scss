@@ -1,0 +1,37 @@
+footer{
+width: 100%;
+background-color: #f7f7f7;
+border-top: 1px solid #ddd;
+// position: fixed;
+bottom: 0;
+z-index: 100;
+margin-top: 60px;
+
+.footer-container{
+    height: 80px;
+
+        .icons{
+            margin-left: 10px;
+            font-size: 22px;
+            gap:20px;
+            color: rgb(70, 70, 70);
+            
+            i{
+                
+                &:hover{
+                    color: rgb(34, 34, 34);
+                    cursor: pointer;
+                }
+            }            
+        }
+    }
+}
+
+@include for-mobile-layout{
+    .footer-container{
+        font-size: 0.9rem;
+        .copy{
+            text-align: left;
+        }
+    }
+}

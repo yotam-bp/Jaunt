@@ -1,0 +1,12 @@
+.select-dates-container {
+    margin: 50px 0;
+}
+@include for-mobile-layout {
+    .select-dates-container{
+        display: flex;
+        justify-content: center;
+    }
+    .react-datepicker__month-container {
+        float: none;
+    }
+}

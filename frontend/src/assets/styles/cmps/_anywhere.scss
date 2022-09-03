@@ -1,0 +1,29 @@
+.live-anywhere-constainer{
+    margin: 60px 0;
+
+    .live-anywhere{
+        margin-top: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        line-height: 2;
+        font-size: 1.3rem;
+        font-weight: 600;
+        img {
+        border-radius: 10px;
+        max-height: 350px;
+        object-fit: cover;
+        }
+    }
+}
+
+@include for-mobile-layout{
+    .live-anywhere-constainer{
+        .live-anywhere{
+         grid-template-columns: repeat(2,1fr);
+
+         img {
+            max-height: 160px;
+            }
+        }
+    }
+}

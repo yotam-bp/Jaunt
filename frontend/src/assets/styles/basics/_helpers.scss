@@ -1,0 +1,110 @@
+// Font Sizes
+.fs12 { font-size: rem(12px); }
+.fs14 { font-size: rem(14px); }
+.fs16 { font-size: rem(16px); }
+.fs18 { font-size: rem(18px); }
+.fs20 { font-size: rem(20px); }
+.fs22 { font-size: rem(22px); }
+.fs24 { font-size: rem(24px); }
+.fs28 { font-size: rem(28px); }
+.fs30 { font-size: rem(30px); }
+.fs34 { font-size: rem(34px); }
+.fs40 { font-size: rem(40px); }
+
+// flex helpers
+
+.flex {
+
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.space-between {
+        justify-content: space-between
+    }
+    &.space-evenly {
+        justify-content: space-evenly
+    }
+    &.wrap{
+        flex-wrap: wrap;
+    }
+}
+
+.grid{
+    display: grid
+}
+
+.stay-rate{
+    :not(:last-child){
+        margin-right: 4px;
+    }
+    .reviews-amount{
+        color: $clr3;
+    }
+    i{
+        color: $clr1;
+    }
+}
+
+.host-img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+.user-img{
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+}
+
+
+.react-datepicker{
+    font-family: cereal-light;
+}
+
+.tiny-border-bottom{
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    width: 0px;
+    padding: 0;
+    flex: 0 0 0px;
+    height: 32px;
+}
+
+.divider{
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 0;
+}
+
+.loader{
+    padding-top: 100px
+}
+.hover{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+// Media helpers
+
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
+.video-ratio {
+    @include aspect-ratio(16, 9);
+}
+.portrait-ratio {
+    @include aspect-ratio(9, 16);
+}

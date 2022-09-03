@@ -1,0 +1,72 @@
+.user-modal{
+    position: absolute;
+    right: 0;
+    color: #222;
+    top: 7px;
+    // margin-top: 20px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 6px 20px #00000033;
+    overflow: hidden auto;
+    cursor: pointer;
+    list-style-type: none;
+    text-align: left;
+    
+    ul{
+      width: 240px;
+      padding: 0;
+      list-style-type: none;
+      margin: 0;
+      & > li,
+      & > a li,
+      .options-loggedin > li,
+      .options-loggedin> a li{
+          padding: 15px 30px;
+          align-items: center;
+        &:hover{
+          background-color: #F5F5F5;
+        }
+      }
+    }
+    
+      
+      & > *:not(:last-child){
+      border-bottom: 1px solid rgb(235, 235, 235);
+    }
+
+    .txt{
+        flex: 2;
+     }
+
+    .btns{
+        flex: 1;
+    }
+    .login-link{
+      font-family: cereal-bold;
+    }
+    .options-loggedin{
+      li{
+        padding: 15px 30px;
+
+      }
+    }
+
+   button{
+    background-color: inherit;
+    color: rgb(113, 113, 113);
+    border: 1px solid rgb(113, 113, 113);
+    border-radius: 50%;
+    padding: 6px 9px;
+    margin: 5px 10px;
+   }
+
+   p:first-child {
+    font-weight: 600;
+  }
+
+  p:last-child {
+    color: rgb(113, 113, 113) ;
+  }
+   
+}

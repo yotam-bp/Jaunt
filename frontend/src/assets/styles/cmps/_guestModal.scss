@@ -1,0 +1,57 @@
+.guests-modal{
+    position: absolute;
+    margin-top: 20px;
+    width: 350px;
+    left: -90px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 6px 20px #00000033;
+    overflow: hidden auto;
+    padding: 15px  15px 15px 30px;
+    cursor: auto;
+    
+    & > *{
+        padding: 15px 0;
+        align-items: center;
+      }
+      
+      & > *:not(:last-child){
+      border-bottom: 1px solid rgb(235, 235, 235);
+    }
+
+    .txt{
+        flex: 2;
+     }
+
+    .btns{
+        flex: 1;
+        & > *:hover{
+        color: rgb(59, 59, 59);
+        border: 1px solid rgb(59, 59, 59);
+        }  
+        span{
+          font-size: 16px;
+          width: 10px;
+        }
+    }
+
+   button{
+    background-color: inherit;
+    color: rgb(113, 113, 113);
+    border: 1px solid rgb(113, 113, 113);
+    border-radius: 50%;
+    padding: 7px 9px;
+    margin: 5px 15px;
+
+   }
+
+   p:first-child {
+    font-weight: 600;
+  }
+
+  p:last-child {
+    color: rgb(113, 113, 113) ;
+  }
+   
+}

@@ -1,0 +1,44 @@
+.explore-nearby{
+    margin-top: 40px;
+    h1{
+        font-size: 2rem;
+    }
+}
+
+.explore{
+    margin-top: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+
+    .explore-preview{
+        letter-spacing: 0.5px;
+        height: 65px;
+    }
+    
+    .destination{   
+        margin: 15px 0;
+        flex: 2;
+    }
+    
+    .img-preview{
+        margin-right: 16px;
+        
+        img{
+            max-width: 65px;
+            border-radius: 8px;
+        }
+    }
+    
+    .city{ 
+        line-height: 2;
+        font-weight: 600;
+    }
+}
+
+@include for-mobile-layout{
+    .explore{
+        grid-template-columns: auto
+    }
+}

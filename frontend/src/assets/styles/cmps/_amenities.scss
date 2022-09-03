@@ -1,0 +1,15 @@
+.amenities{
+    margin-top: 2rem;
+    P{
+        line-height: 3rem;
+        gap: 20px;
+
+        :not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    i{
+        width: 20px;
+    }
+    
+}

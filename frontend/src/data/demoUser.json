@@ -1,0 +1,187 @@
+{
+    "_id" : "60bcccfab548c8e1688fde18",
+    "fullName" : "Yotam Ben Porat",
+    "img" : "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622996602/Jaunt%20Demo%20Data/yotam_apixrt.jpg",
+    "isHost" : "true",
+    "username" : "Yotam",
+    "password" : "98",
+    "houses" : [],
+    "wishlist" : [ 
+        {
+            "_id" : "60bcb44cb548c8e1688fde1e",
+            "name" : "Flora suite x2 metro Vittorio Emanuele",
+            "imgUrls" : [ 
+                "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622962275/Jaunt%20Demo%20Data/rome-6-1_xwih1g.jpg", 
+                "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622962276/Jaunt%20Demo%20Data/rome-6-2_mx0nmt.jpg", 
+                "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622962276/Jaunt%20Demo%20Data/rome-6-3_wbzshf.jpg", 
+                "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622962276/Jaunt%20Demo%20Data/rome-6-4_azoxxe.jpg", 
+                "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622962275/Jaunt%20Demo%20Data/rome-6-5_jldxoj.jpg"
+            ],
+            "price" : 79.0,
+            "summary" : "the studio is actually located inside another bigger apartment, subdivided into 2 different mini apartment, there are no shared space and privacy is guarantied. :)",
+            "capacity" : 2.0,
+            "amenities" : [ 
+                "TV", 
+                "Wifi", 
+                "Kitchen", 
+                "Air conditioning", 
+                "Washer"
+            ],
+            "host" : {
+                "_id" : "51399120",
+                "fullname" : "Sara",
+                "imgUrl" : "https://source.unsplash.com/random/100x100/?face"
+            },
+            "loc" : {
+                "country" : "Italy",
+                "countryCode" : "IT",
+                "address" : "Rome, Italy",
+                "lat" : 41.902782,
+                "lng" : 12.496366
+            },
+            "reviews" : [ 
+                {
+                    "id" : "5139996",
+                    "txt" : "Sara was really kind and offered us a lot of information and the suite is 10 minutes distance from Termini Stazione, but the whole apartment is actually a bedroom with a bathroom in a full apartment with other rooms. Another aspect is the noise. The windows arent't closing very well and the trams station that is close to the apartment kept us awake every night.",
+                    "rate" : 3.5,
+                    "by" : {
+                        "_id" : "u202",
+                        "fullname" : "Andreea",
+                        "imgUrl" : "https://source.unsplash.com/random/100x100/?face"
+                    }
+                }, 
+                {
+                    "id" : "5139997",
+                    "txt" : "We can’t thank Sara enough for making our stay in Rome so special!! Her place is amazing and we had a fantastic time. Her place is lovely, just like seen in the pictures! Great location, everything you need is just a short walk away. Small markets, coffee shops, pharmacy and metro station are just around the corner, 15 min walk to the Coliseum. You can see how much thought and attention to detail Sara has put into it! She is in all ways an amazing host, telling us where to get “real” Roman meals, best places to park and answered any question we’ve had in no time. We’ve stayed a whole week and will long treasure the great memories we’ve brought home.",
+                    "rate" : 5.0,
+                    "by" : {
+                        "_id" : "u203",
+                        "fullname" : "Tobias Manuel",
+                        "imgUrl" : "https://source.unsplash.com/random/100x100/?face"
+                    }
+                }, 
+                {
+                    "id" : "5139998",
+                    "txt" : "Sara is a very friendly and helpful host. As this flat had a broken ac she gave me a bigger flat wich is at the other side from the park. All the tourist attractions were reachable by foot. Metro is a 20m away from the flat, as is a nice wine bar. I certainly recommend staying at Saras.",
+                    "rate" : 5.0,
+                    "by" : {
+                        "_id" : "u204",
+                        "fullname" : "Anida",
+                        "imgUrl" : "https://source.unsplash.com/random/100x100/?face"
+                    }
+                }, 
+                {
+                    "id" : "5139999",
+                    "txt" : "Had a wonderful stay at this place because of Sara's extra hospitality! From giving us a lift from the station, offering a bigger flat because the one we booked had faulty air conditioner to taking time to tell us everything about Rome and sightseeing. The place was also clean, stylish with lots of lovely touches. Highly recommend!",
+                    "rate" : 5.0,
+                    "by" : {
+                        "_id" : "u205",
+                        "fullname" : "Renate",
+                        "imgUrl" : "https://source.unsplash.com/random/100x100/?face"
+                    }
+                }
+            ],
+            "likedByUserIds" : [ 
+                "u184", 
+                "u185", 
+                "u186", 
+                "u185", 
+                "u187"
+            ]
+        }
+    ],
+    "orders" : [ 
+        {
+            "location" : "London, United Kingdom",
+            "startDate" : "2021-07-05T21:00:00.000Z",
+            "endDate" : "2021-07-09T21:00:00.000Z",
+            "guestAmount" : {
+                "adults" : 2,
+                "children" : 0,
+                "infants" : 0
+            },
+            "stay" : {
+                "name" : "Design Led Boutique Hotel Style Brixton House",
+                "imgUrls" : [ 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-1_bahukh.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225758/Jaunt%20Demo%20Data/london-7-2_bxvux7.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-3_j9blvz.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-4_ji0hiy.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225758/Jaunt%20Demo%20Data/london-7-5_sjtt9j.jpg"
+                ],
+                "country" : "United kingdom"
+            }
+        }, 
+        {
+            "location" : "London, United Kingdom",
+            "startDate" : "2021-06-17T21:00:00.000Z",
+            "endDate" : "2021-06-18T21:00:00.000Z",
+            "guestAmount" : {
+                "adults" : 2,
+                "children" : 0,
+                "infants" : 0
+            },
+            "stay" : {
+                "name" : "Design Led Boutique Hotel Style Brixton House",
+                "imgUrls" : [ 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-1_bahukh.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225758/Jaunt%20Demo%20Data/london-7-2_bxvux7.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-3_j9blvz.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-4_ji0hiy.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225758/Jaunt%20Demo%20Data/london-7-5_sjtt9j.jpg"
+                ],
+                "country" : "United kingdom"
+            }
+        }, 
+        {
+            "location" : "London, United Kingdom",
+            "startDate" : "2021-07-06T21:00:00.000Z",
+            "endDate" : "2021-07-07T21:00:00.000Z",
+            "guestAmount" : {
+                "adults" : 2,
+                "children" : 0,
+                "infants" : 0
+            },
+            "stay" : {
+                "name" : "Design Led Boutique Hotel Style Brixton House",
+                "imgUrls" : [ 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-1_bahukh.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225758/Jaunt%20Demo%20Data/london-7-2_bxvux7.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-3_j9blvz.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225757/Jaunt%20Demo%20Data/london-7-4_ji0hiy.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1623225758/Jaunt%20Demo%20Data/london-7-5_sjtt9j.jpg"
+                ],
+                "country" : "United kingdom"
+            }
+        }
+    ],
+    "incomingOrders" : [ 
+        {
+            "location" : "Paris, France",
+            "startDate" : "2021-08-02T21:00:00.000Z",
+            "endDate" : "2021-08-03T21:00:00.000Z",
+            "guestAmount" : {
+                "adults" : 2,
+                "children" : 0,
+                "infants" : 0
+            },
+            "stay" : {
+                "name" : "Tao express , opéra LAFAYETTE",
+                "imgUrls" : [ 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877448/Jaunt%20Demo%20Data/paris-4-1_ffwqbd.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877448/Jaunt%20Demo%20Data/paris-4-2_gdrpl1.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877447/Jaunt%20Demo%20Data/paris-4-3_wlibwn.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877448/Jaunt%20Demo%20Data/paris-4-4_bbcff3.jpg", 
+                    "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877448/Jaunt%20Demo%20Data/paris-4-5_cqnj4a.jpg"
+                ],
+                "country" : "France"
+            },
+            "guest" : {
+                "fullName" : "Yotam Ben Porat",
+                "img" : "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622996602/Jaunt%20Demo%20Data/yotam_apixrt.jpg",
+                "username" : "Yotam",
+                "_id" : "60bce706b548c8e1688fde2a"
+            }
+        }
+    ]
+}

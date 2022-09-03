@@ -1,0 +1,39 @@
+.stay-edit{
+    header{
+        color: $clr2;
+        padding-top: 20px;;
+    }
+    .logo-container{
+        color: $clr1
+    }
+    h2{
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+    form{
+        .center{
+            gap:50px;
+            & > *{
+                flex: 1;
+                
+
+            }
+        }
+
+        & > *{
+            margin-bottom: 20px;
+        }
+        
+        &:first-of-type{
+            margin-top: 20px;
+        }
+    }
+    .add-btn{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+    }
+     .submit{
+        background-color: $clr3;
+    }
+}

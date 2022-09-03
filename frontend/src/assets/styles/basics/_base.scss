@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: cereal-light;
+    color: $clr2;
+}
+html,
+body{
+    height: 100%;
+    margin: 0;
+
+}
+
+// body {
+//     font-size: rem(16px);
+// }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.6em;
+    line-height: 1;
+    font-weight: 100;
+    font-family: cereal-medium;
+}
+
+.app{
+    flex-grow: 1;
+    min-height: 100%;
+}
+
+
+// section, main, footer {
+//     padding: 5px;
+
+// }
+//to change
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0 0 0;
+    // max-width: 40ch;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+// a:hover {
+//     text-decoration: underline;
+// }
+
+button,
+label{
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+.alert > *{
+    font-size: 40px;
+}
