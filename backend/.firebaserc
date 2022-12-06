@@ -1,6 +1,15 @@
 {
   "projects": {
-    "default": "travel-jaunt"
-  }
+    "default": "react-http-bfc98"
+  },
+  "targets": {
+    "react-http-bfc98": {
+      "hosting": {
+        "jaunt": [
+          "jaunt-app"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
-
