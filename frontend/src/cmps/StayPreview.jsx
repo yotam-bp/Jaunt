@@ -7,7 +7,7 @@ import Alert from "../cmps/Alert";
 export function StayPreview({ stay, loggedInUser, addToWish, removeFromWish }) {
   const [onAlert, setOnAlert] = useState(null);
 
-  const isOnWishlist = loggedInUser.wishlist.find(
+  const isOnWishlist = loggedInUser?.wishlist.find(
     (saved) => saved._id === stay._id
   );
 
@@ -42,16 +42,9 @@ export function StayPreview({ stay, loggedInUser, addToWish, removeFromWish }) {
             <span className="left">
               <i className="fa fa-star"></i>
               <span className="reviews-rate">{stay.reviews[0].rate}</span>
-              {stay.reviews.length === 1 && (
-                <span className="reviews-amount">
-                  ({stay.reviews.length} review)
-                </span>
-              )}
-              {stay.reviews.length > 1 && (
-                <span className="reviews-amount">
-                  ({stay.reviews.length} reviews)
-                </span>
-              )}
+              <span className="reviews-amount">
+                ({stay.reviews.length !== 1 ? "reviews" : "review"})
+              </span>
             </span>
             {}
             {loggedInUser && (
@@ -81,7 +74,7 @@ export function StayPreview({ stay, loggedInUser, addToWish, removeFromWish }) {
           </p>
         </Link>
       </article>
-      {onAlert && <Alert text={onAlert}  severity={"success"}/>}
+      {onAlert && <Alert text={onAlert} severity={"success"} />}
     </div>
   );
 }
