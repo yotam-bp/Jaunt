@@ -10,7 +10,11 @@ import { StayList } from "../cmps/StayList";
 import { NavBar } from "../cmps/NavBar.jsx";
 import { LoaderCmp } from "../cmps/LoaderCmp";
 import { socketService } from "../services/socketService.js";
-import { loadUser, addToWish,removeFromWish } from "../store/actions/userActions";
+import {
+  loadUser,
+  addToWish,
+  removeFromWish,
+} from "../store/actions/userActions";
 
 class _StayApp extends Component {
   state = {
@@ -42,7 +46,7 @@ class _StayApp extends Component {
     let search = prevProps.location.search;
     let params = new URLSearchParams(search);
     let prevLocation = params.get("loc");
-    console.log(currLocation);
+    console.log(prevLocation);
     if (currLocation !== prevLocation) {
       this.props.loadStays(this.getFilterBy());
     }
@@ -56,7 +60,7 @@ class _StayApp extends Component {
     return filterBy;
   };
 
-  loadStays = (filterBy) => {
+  onLoadStays = (filterBy) => {
     this.props.loadStays(filterBy);
   };
 
@@ -69,21 +73,9 @@ class _StayApp extends Component {
       setLocation,
       addToWish,
       loggedInUser,
-      removeFromWish
+      removeFromWish,
     } = this.props;
-    if (this.state.isLoading)
-      return (
-        <section style={{ minHeight: "100vh" }}>
-          <NavBar
-            order={order}
-            setDates={setDates}
-            setGuestAmount={setGuestAmount}
-            setLocation={setLocation}
-            updateSearch={this.updateSearch}
-          />
-          <LoaderCmp />
-        </section>
-      );
+
     if (!stays || stays === []) return <div>load</div>;
     const loc = this.getFilterBy().location;
     return (
@@ -93,16 +85,20 @@ class _StayApp extends Component {
           setDates={setDates}
           setGuestAmount={setGuestAmount}
           setLocation={setLocation}
-          updateSearch={this.updateSearch}
+          onLoadStays={this.onLoadStays}
         />
         {!loc && <h1 className="headline-explore">Explore all stays</h1>}
         {loc && <h1 className="headline-explore">Stays in {loc}</h1>}
-        <StayList
-          stays={stays}
-          addToWish={addToWish}
-          loggedInUser={loggedInUser}
-          removeFromWish={removeFromWish}
-        />
+        {this.state.isLoading ? (
+          <LoaderCmp />
+        ) : (
+          <StayList
+            stays={stays}
+            addToWish={addToWish}
+            loggedInUser={loggedInUser}
+            removeFromWish={removeFromWish}
+          />
+        )}
       </section>
     );
   }
@@ -123,7 +119,7 @@ const mapDispatchToProps = {
   setLocation,
   loadUser,
   addToWish,
-  removeFromWish
+  removeFromWish,
 };
 
 export const StayApp = connect(mapStateToProps, mapDispatchToProps)(_StayApp);
